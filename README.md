@@ -2,6 +2,16 @@
 
 [![demo](http://i.imgur.com/XRs3jk7.gif)](https://handsomeone.github.io/Nonogram)
 
+
+# Install/build
+
+see package.json for more
+
+```
+npm install
+npm build
+```
+
 ## Usage
 
 [**Check the live demo and find out how to build your own nonogram application.**](https://handsomeone.github.io/Nonogram)
