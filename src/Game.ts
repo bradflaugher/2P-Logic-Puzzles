@@ -69,6 +69,20 @@ export default class Game extends Nonogram {
     }, false)
     return hints
   }
+
+  /*Gamepad Notes: 
+  * Gamepad API https://developer.mozilla.org/en-US/docs/Games/Techniques/Controls_Gamepad_API
+  * Retropie (Browser Install) https://github.com/zerojay/RetroPie-Extra
+  * 
+  * TODO LIST
+  * -Setup Default Position for P1 and P2 (or 3 or 4)
+  * -Listen for all connected gamepads https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getGamepads
+  * -On DPAD move the highlighted cell... don't change status (see onmousemove stuff below)
+  * -on X... place an X
+  * -on Y fill in the square
+  */ 
+
+
   initListeners() {
     this.listeners = [
       ['mousedown', this.mousedown],
