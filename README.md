@@ -3,13 +3,20 @@
 [![demo](http://i.imgur.com/XRs3jk7.gif)](https://handsomeone.github.io/Nonogram)
 
 
+# TODO
+
+* Gamepad API (2 Player Support)
+* Better Reset
+* Music
+* Electron Packaging
+
 # Install/build
 
 see package.json for more
 
 ```
 npm install
-npm build
+npm run-script build
 ```
 
 ## Usage

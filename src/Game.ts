@@ -17,6 +17,7 @@ export default class Game extends Nonogram {
     direction?: Direction
   }
   isPressed: boolean
+  test: string
 
   constructor(
     row: number[][],
@@ -52,7 +53,7 @@ export default class Game extends Nonogram {
     this.hints.column.forEach((c, j) => { c.isCorrect = this.isLineCorrect('column', j) })
 
     this.initCanvas(canvas)
-
+    
     this.brush = Status.FILLED
     this.draw = {}
     this.print()
@@ -71,15 +72,13 @@ export default class Game extends Nonogram {
   }
 
   /*Gamepad Notes: 
-  * Gamepad API https://developer.mozilla.org/en-US/docs/Games/Techniques/Controls_Gamepad_API
-  * Retropie (Browser Install) https://github.com/zerojay/RetroPie-Extra
-  * 
+  *
   * TODO LIST
-  * -Setup Default Position for P1 and P2 (or 3 or 4)
-  * -Listen for all connected gamepads https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getGamepads
+  * -Setup Default Position for P1 and P2 (or 3 or 4)... p1 (y,x) and p2 (x,y) in constructor
   * -On DPAD move the highlighted cell... don't change status (see onmousemove stuff below)
   * -on X... place an X
   * -on Y fill in the square
+  * -Fix listener interval
   */ 
 
 
@@ -90,7 +89,22 @@ export default class Game extends Nonogram {
       ['mouseup', this.brushUp],
       ['mouseleave', this.brushUp],
     ]
+    setInterval(this.buttonHandler,500)
   }
+
+  buttonHandler = () => {
+    console.log("Looking For Presses....")
+    var gamepads = navigator.getGamepads ? navigator.getGamepads() : []
+    for (let gamepad of gamepads){
+      if (gamepad !== null){
+        for(var i = 0; i < gamepad.buttons.length;i++)
+          if(gamepad.buttons[i] && gamepad.buttons[i].pressed){
+            console.log(gamepad.id+gamepad.index+" pressed button"+i+"val:"+gamepad.buttons[i].value)
+          }
+      }
+    }
+  }
+
   mousedown = (e: MouseEvent) => {
     const rect = this.canvas.getBoundingClientRect()
     const x = e.clientX - rect.left
@@ -100,8 +114,10 @@ export default class Game extends Nonogram {
     if (location === 'controller') {
       this.switchBrush()
     } else if (location === 'grid') {
-      this.draw.firstI = Math.floor(y / d - 0.5)
-      this.draw.firstJ = Math.floor(x / d - 0.5)
+      this.draw.firstI = Math.floor(y / d - 0.5) //THESE ARE THE COORDINATES
+      this.draw.firstJ = Math.floor(x / d - 0.5) //THESE ARE THE COORDINATES
+      console.log(Math.floor(y / d - 0.5))
+      console.log(Math.floor(x / d - 0.5))
       this.draw.inverted = e.button === 2
       const cell = this.grid[this.draw.firstI][this.draw.firstJ]
       let brush = this.brush

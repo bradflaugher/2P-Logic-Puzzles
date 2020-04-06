@@ -27,5 +27,6 @@
     "rollup-plugin-bundle-worker": "^0.1.0",
     "rollup-plugin-typescript": "^0.8.1",
     "typescript": "^2.6.1"
-  }
+  },
+  "dependencies": {}
 }
