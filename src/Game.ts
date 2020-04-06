@@ -94,10 +94,10 @@ export default class Game extends Nonogram {
 
   buttonHandler = () => {
     console.log("Looking For Presses....")
-    var gamepads = navigator.getGamepads ? navigator.getGamepads() : []
+    const gamepads = navigator.getGamepads() || []
     for (let gamepad of gamepads){
       if (gamepad !== null){
-        for(var i = 0; i < gamepad.buttons.length;i++)
+        for(let i = 0; i < gamepad.buttons.length;i++)
           if(gamepad.buttons[i] && gamepad.buttons[i].pressed){
             console.log(gamepad.id+gamepad.index+" pressed button"+i+"val:"+gamepad.buttons[i].value)
           }
