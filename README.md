@@ -12,11 +12,15 @@
 
 # Install/build
 
-see package.json for more
-
 ```
 npm install
 npm run-script build
+```
+
+# "Live Development"
+
+```
+npm start
 ```
 
 ## Usage
