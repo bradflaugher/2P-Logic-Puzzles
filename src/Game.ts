@@ -342,7 +342,6 @@ export default class Game extends Nonogram {
             player = p
           }
         }
-        console.log(player)
         this.printCell(this.grid[i][j], player)
         ctx.restore()
       }

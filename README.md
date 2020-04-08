@@ -1,13 +1,16 @@
 # Nonogram
 
-[![demo](http://i.imgur.com/XRs3jk7.gif)](https://handsomeone.github.io/Nonogram)
+[![demo](https://i.imgur.com/beKvKjH.gif)](https://github.com/predbrad/Nonogram)
 
 
-# TODO (Later)
+# Improvements TODO (Later)
 
-* Nonogram.ts fill colors for players
-* Music
-* Electron Packaging
+* Host on S3
+* Post instructions for playing on Steam Link or Raspberry Pi
+
+# Not Doing
+
+* Electron App (no Steam Support)
 
 # Install/build
 

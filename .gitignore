@@ -5,3 +5,4 @@ node_modules
 docs/nonogram.js
 yarn.lock
 package-lock.json
+couch-picross-win32-x64
