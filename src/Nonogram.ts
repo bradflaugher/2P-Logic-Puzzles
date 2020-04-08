@@ -18,6 +18,7 @@ abstract class Nonogram {
   m: number
   n: number
   grid: Status[][]
+
   hints: {
     row: LineOfHints[]
     column: LineOfHints[]
@@ -156,7 +157,7 @@ abstract class Nonogram {
       this.printMesh()
     }
   }
-  printCell(status: Status) {
+  printCell(status: Status, player = -1) {
     const { ctx } = this
     const d = this.canvas.width * 2 / 3 / (this.n + 1)
     switch (status) {

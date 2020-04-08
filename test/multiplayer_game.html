@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #ffd;
+    }
+  </style>
+</head>
+
+<body onload="gameStart();">
+  <img id="controls" style="position: absolute right: 100px; bottom:0px;" src="controller.png" height="200">
+  <canvas id="game" style="position:absolute; left: 25%;"></canvas>
+ 
+  <canvas id="solution" style="position:absolute; margin-top: 1000px;"></canvas>
+  <script src="../docs/nonogram.js"></script>
+  <!-- "FOR PROD" <script src="../docs/nonogram.min.js"></script> -->
+
+  
+  <script>
+    function $(selector) {
+      return document.querySelector(selector)
+    }
+    function $$(selector) {
+      return document.querySelectorAll(selector)
+    }
+    var canvases = $$('canvas')
+    function newCustomNonogram() {
+      new nonogram.Editor(
+        10, //GRID SIZE
+        10, //GRID SIZE
+        canvases[1],
+        {
+          threshold: 0.5,
+          onHintChange: function (row, column) {
+            new nonogram.Game(row, column, 'game', {
+              theme: {
+                boldMeshGap: 0,
+              },
+              onSuccess: function () {
+                console.log('success')
+              },
+              onAnimationEnd: function () {
+                console.log('animation end')
+              }
+            })
+          },
+        }
+      )
+    }
+
+    function gameStart() {
+      var canvs = document.getElementById("game");
+      var csize = Math.min(window.innerWidth,window.innerHeight);
+      canvs.width = csize;
+      canvs.height = csize;
+      newCustomNonogram();
+      setTimeout(function() {
+        var x = document.getElementById("controls");
+        x.style.display = "none";
+        }, 2000);
+    }
+  </script>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>

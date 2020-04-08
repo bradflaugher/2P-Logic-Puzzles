@@ -3,10 +3,9 @@
 [![demo](http://i.imgur.com/XRs3jk7.gif)](https://handsomeone.github.io/Nonogram)
 
 
-# TODO
+# TODO (Later)
 
-* Gamepad API (2 Player Support)
-* Better Reset
+* Nonogram.ts fill colors for players
 * Music
 * Electron Packaging
 
