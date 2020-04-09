@@ -1,5 +1,7 @@
 # Nonogram / AKA "Couch Picross"
 
+a multiplayer (up to 4) controller-supported (Xbox 1 controllers only) picross game. Written in pure typescript.
+
 <img src="https://i.imgur.com/WVbmFJ0.gif" alt="demo" width="300"/>
 
 ## Controls
