@@ -1,10 +1,10 @@
 # Nonogram
 
-[![demo](https://i.imgur.com/WVbmFJ0.gif)](http://bradflaugher.com/couch-picross.html)
+[![demo](https://i.imgur.com/WVbmFJ0.gif | width=150)](http://bradflaugher.com/couch-picross.html)
 
 
 ## Controls
-[![Controls A=Select; B="x"; DPad = Move; ABD = Reset](/play/controller.png)]
+[![Controls A=Select; B="x"; DPad = Move; ABD = Reset](/play/controller.png | width=150)](http://bradflaugher.com/couch-picross.html)
 
 
 # How To Play
