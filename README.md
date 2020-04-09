@@ -1,10 +1,10 @@
 # Nonogram
 
-<img src="https://i.imgur.com/WVbmFJ0.gif" alt="demo" width="150"/>
+<img src="https://i.imgur.com/WVbmFJ0.gif" alt="demo" width="300"/>
 
 ## Controls
 
-<img src="/play/controller.png" alt="Controls A=Select; B='X' DPad = Move; ABD = Reset" width="150"/>
+<img src="/play/controller.png" alt="Controls A=Select; B='X' DPad = Move; ABD = Reset" width="300"/>
 
 # How To Play
 
