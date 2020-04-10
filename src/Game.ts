@@ -202,7 +202,6 @@ export default class Game extends Nonogram {
         this.grid[i][j] = Status.FILLED
         this.hints.row[i].isCorrect = this.isLineCorrect('row', i)
         this.hints.column[j].isCorrect = this.isLineCorrect('column', j)
-        this.checkSucceed()
       } else {
         this.grid[i][j] = Status.UNSET
       }
@@ -215,7 +214,6 @@ export default class Game extends Nonogram {
         this.grid[i][j] = Status.EMPTY
         this.hints.row[i].isCorrect = this.isLineCorrect('row', i)
         this.hints.column[j].isCorrect = this.isLineCorrect('column', j)
-        this.checkSucceed()
       } else {
         this.grid[i][j] = Status.UNSET
       }
@@ -239,7 +237,7 @@ export default class Game extends Nonogram {
                 && this.players[i].y === this.players[player].y)
         this.buttonAction(player, press)
     }
-
+    this.checkSucceed()
     this.print()
   }
 

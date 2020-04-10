@@ -30,7 +30,7 @@ abstract class Nonogram {
       unsetColor: $.greyVeryLight,
       correctColor: $.green,
       wrongColor: $.red,
-      meshColor: $.yellow,
+      meshColor: $.greyVeryDark,
       isMeshed: false,
       isBoldMeshOnly: false,
       isMeshOnTop: false,
