@@ -1,11 +1,5 @@
 # Nonogram / AKA "Couch Picross"
 
-
-## TODOs
-* dockerize dev env
-* setup openai key to autogenerate puzzles
-* password protection option
-
 a multiplayer (up to 4) controller-supported (Xbox 1 controllers only) picross game. Written in pure typescript.
 
 <img src="https://i.imgur.com/WVbmFJ0.gif" alt="demo" width="300"/>
@@ -36,3 +30,8 @@ npm start
 ## More Info
 
 [API Docs](API.md)
+
+## TODOs
+* dockerize dev env
+* setup openai key to autogenerate puzzles
+* password protection option
