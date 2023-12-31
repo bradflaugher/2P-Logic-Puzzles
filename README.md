@@ -4,6 +4,9 @@ a multiplayer (up to 4) controller-supported (Xbox 1 controllers only) picross g
 
 <img src="https://i.imgur.com/WVbmFJ0.gif" alt="demo" width="300"/>
 
+## TODO
+* deploy to couchpicross.com or something
+
 ## Controls
 
 <img src="/play/controller.png" alt="Controls A=Select; B='X' DPad = Move; ABD = Reset" width="300"/>
