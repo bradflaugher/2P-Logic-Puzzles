@@ -1,26 +1,36 @@
-# Couch Picross
+# 🛋 Couch Picross 🎮
 
-a multiplayer (up to 4) controller-supported (Xbox 1 controllers only) picross game. Written in pure typescript.
+Couch Picross is a multiplayer picross game that supports up to 4 players, designed specifically for fun and challenging puzzle-solving sessions right from your couch! This game is fully compatible with Xbox One controllers and is crafted using pure TypeScript for smooth, responsive gameplay.
 
-<img src="./docs/gameplay.gif" alt="demo" width="300"/>
+![Gameplay Demo](./docs/gameplay.gif)
 
-# <a href="test.html">Play It Now!</a>
+## 🚀 Quick Start
 
-# Developing 
+### [🎲 Play It Now!](test.html)
 
-## Install/build
+Jump right into the action and start solving puzzles with your friends!
 
-```
+## 💻 For Developers
+
+### 📦 Install & Build
+
+To set up your development environment and build the project, run the following commands:
+
+```bash
 npm install
 npm run-script build
 ```
 
-## Live Development
+### 🔄 Live Development
 
-```
+For a live development server that updates as you make changes, use:
+
+```bash
 npm start
 ```
 
-## More Info
+### 🔗 More Info
 
-[API Docs](API.md)
+- [📚 API Documentation](API.md)
+
+Dive deeper into the game's architecture and learn how to extend or modify it to your liking.
