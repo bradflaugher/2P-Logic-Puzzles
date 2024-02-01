@@ -2,7 +2,7 @@
 
 a multiplayer (up to 4) controller-supported (Xbox 1 controllers only) picross game. Written in pure typescript.
 
-<img src="./play/gameplay.gif" alt="demo" width="300"/>
+<img src="./docs/gameplay.gif" alt="demo" width="300"/>
 
 # <a href="test.html">Play It Now!</a>
 
