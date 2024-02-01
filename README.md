@@ -4,9 +4,7 @@ a multiplayer (up to 4) controller-supported (Xbox 1 controllers only) picross g
 
 <img src="./play/gameplay.gif" alt="demo" width="300"/>
 
-# Play it!
-
-<a href="test.html">Play Now!</a>
+# <a href="test.html">Play It Now!</a>
 
 # Developing 
 
