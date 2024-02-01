@@ -2,7 +2,7 @@
 
 Couch Picross is a multiplayer picross game that supports up to 4 players, designed specifically for fun and challenging puzzle-solving sessions right from your couch! This game is fully compatible with Xbox One controllers and is crafted using pure TypeScript for smooth, responsive gameplay.
 
-![Gameplay Demo](./docs/gameplay.gif)
+<img src="./docs/gameplay.gif" alt="demo" width="300"/>
 
 ## 🚀 Quick Start
 
