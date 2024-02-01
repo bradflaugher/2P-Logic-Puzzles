@@ -6,7 +6,7 @@ Couch Picross is a multiplayer picross game that supports up to 4 players, desig
 
 ## 🚀 Quick Start
 
-### [🎲 Play It Now!](test.html)
+### [🎲 Play It Now!](https://predbrad.github.io/Couch-Picross/)
 
 Jump right into the action and start solving puzzles with your friends!
 
