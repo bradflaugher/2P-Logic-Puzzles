@@ -1,6 +1,6 @@
-# 🛋 Couch Picross 🎮
+# 🛋 2P Logic Puzzles 🎮
 
-Couch Picross is a multiplayer picross game that supports up to 4 players, designed specifically for fun and challenging puzzle-solving sessions right from your couch! This game is fully compatible with Xbox One controllers and is crafted using pure TypeScript for smooth, responsive gameplay.
+This repo contains is a multiplayer nonogram or Picross-like game that supports up to 4 players, designed specifically for fun and challenging puzzle-solving sessions right from your couch! This game is fully compatible with Xbox One controllers and is crafted using pure TypeScript for smooth, responsive gameplay.
 
 <img src="./docs/gameplay.gif" alt="demo" width="300"/>
 
