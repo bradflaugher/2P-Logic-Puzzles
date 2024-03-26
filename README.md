@@ -6,7 +6,7 @@ This repo contains is a multiplayer nonogram or Picross-like game that supports 
 
 ## 🚀 Quick Start
 
-### [🎲 Play It Now @ CouchPicross.com !](https://couchpicross.com/)
+### [🎲 Play It Now @ CouchPicross.com !](https://couchpicross.com/) or [TranslateTribune.com](https://TranslateTribune.com)
 
 Jump right into the action and start solving puzzles with your friends!
 
