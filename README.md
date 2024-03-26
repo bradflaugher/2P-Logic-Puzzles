@@ -38,4 +38,3 @@ Dive deeper into the game's architecture and learn how to extend or modify it to
 ### Known Issues
 
 * Controller D-Pad does not work on Firefox (but does on Edge and Chrome)
-* Development environment needs to be dockerized
